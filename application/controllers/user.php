@@ -24,6 +24,10 @@ class user extends CI_Controller {
   }
   public function signup()
   {
+      //查询是否存在用户
+      //插入
+      //赋值session
+      //
       
   }
   public function login()
@@ -37,7 +41,7 @@ class user extends CI_Controller {
     	//密码正确时重置lastact_time
     	//设置用户session
     	//gc.in.php?
-    	Header("Location:"."./cpanel.php");
+		redirect('cpanel/index');
     	exit;
     	//假如有出错信息。记录ip
     }

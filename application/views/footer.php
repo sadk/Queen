@@ -7,7 +7,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{$tplpath}/js/jquery.js"></script>
-    <script src="{$tplpath}/js/bootstrap.min.js"></script> 
+    <script src="<?php echo base_url();?>asserts/js/jquery.js"></script>
+    <script src="<?php echo base_url();?>asserts/js/bootstrap.min.js"></script> 
   </body>
 </html>

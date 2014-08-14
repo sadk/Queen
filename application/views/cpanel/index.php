@@ -1,5 +1,5 @@
-{subtemplate header}
-{subtemplate header_warning}
+<?php $this -> load -> view('header'); ?>
+<?php $this -> load -> view('header_warning'); ?>
 <div id="header_warning"></div>
 <a name="top"></a>
 <div class="row" id="multiPanel">
@@ -27,12 +27,12 @@
 	<div id="multi_app_container"></div>
 </div>
 	
-<script src="{$tplpath}/js/hyp_cpanel.js"></script>
-<script src="{$tplpath}/js/hyp_request.js"></script> 
-<script src="{$tplpath}/js/hyp_multi_panel.js"></script>
+<script src="<?php echo base_url();?>asserts/js/hyp_cpanel.js"></script>
+<script src="<?php echo base_url();?>asserts/js/hyp_request.js"></script> 
+<script src="<?php echo base_url();?>asserts/js/hyp_multi_panel.js"></script>
 <!--{if !(($lastsuccess) or ($lasterror))}-->
 <script>
    window.onload=function(){toolkit_switcher('switcher_clist',1);toolkit_switcher('switcher_ban',1);}
 </script>
 <!--{/if}-->
-{subtemplate footer}
+<?php $this -> load -> view('footer'); ?>

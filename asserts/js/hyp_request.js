@@ -1,7 +1,7 @@
 
    function post_draw(my_url,my_position,my_data){
 	 try{
-       document.getElementById(my_position).innerHTML="<img src=\"./templates/bootstrap/img/loading-mini.gif\">";
+       document.getElementById(my_position).innerHTML="<img src=\"../../asserts/img/loading-mini.gif\">";
 	   $.ajax( {
 		   type : "post",
 		   url : my_url,
@@ -82,7 +82,7 @@
 		  var explodeCid = cid.split(";");
 		  for(i=0; i<explodeCid.length; i++){
 			  if (explodeCid[i] > 0){
-				  document.getElementById("STATU_"+explodeCid[i]+"_"+mid).innerHTML="<img src=\"./templates/bootstrap/img/loading-mini.gif\">";		  
+				  document.getElementById("STATU_"+explodeCid[i]+"_"+mid).innerHTML="<img src=\"../../asserts/img/loading-mini.gif\">";		  
 				  document.getElementById("WIDGET_"+explodeCid[i]+"_"+mid).innerHTML="";
 				  if (!callback){
 					  document.getElementById("SCC_"+explodeCid[i]+"_"+mid).value=ShortCutsContents;
@@ -155,14 +155,14 @@ function show_do_request(result,tid,mid,callback,callback_params){
 			 
 			 if (document.getElementById("STATU_"+c_uniqu)){					 					
 				 if (c_response.keepRequest){
-					 document.getElementById("STATU_"+c_uniqu).innerHTML="<img src=\"./templates/bootstrap/img/loading-mini.gif\">";
+					 document.getElementById("STATU_"+c_uniqu).innerHTML="<img src=\"../../asserts/img/loading-mini.gif\">";
 					 remain_cid += c_response.cid+";";
 					 keepAlive = true;
 					 mid = c_response.mid;
 					 c_tid = c_response.tid;
 				 }else{
 					 if (c_response.fail){
-						 document.getElementById("STATU_"+c_uniqu).innerHTML="<img src=\"./templates/bootstrap/img/warning-mini.png\">";
+						 document.getElementById("STATU_"+c_uniqu).innerHTML="<img src=\"../../asserts/img/warning-mini.png\">";
 					 }else{
 						 document.getElementById("STATU_"+c_uniqu).innerHTML="";
 					 }

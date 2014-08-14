@@ -8,7 +8,7 @@ function multi_clients_list_load(show){
 	   document.getElementById("multi_clients_list").style.display = "none";
    }else{
 	   document.getElementById("multi_clients_list").style.display = "block";
-	   post_draw("./cpanel.php","multi_clients_list","act=clients_list");
+	   post_draw("clients_list","multi_clients_list","act=clients_list");
    }
 }     
 function multi_group_list_load(show){
@@ -16,7 +16,7 @@ function multi_group_list_load(show){
 	   document.getElementById("multi_clients_list").style.display = "none";
    }else{
 	   document.getElementById("multi_clients_list").style.display = "block";
-	   post_draw("./cpanel.php","multi_clients_list","act=group_list");
+	   post_draw("group_list","multi_clients_list","act=group_list");
    }
 }
 

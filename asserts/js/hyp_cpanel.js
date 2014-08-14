@@ -15,7 +15,7 @@ function mod_manage(cid){
 function mod_install(tid,cid,mid,os,dom){
 	if (null == tid){	
 		if (document.getElementById(dom)){
-			document.getElementById(dom).innerHTML="<img src=\"./templates/bootstrap/img/loading-mini.gif\">";
+			document.getElementById(dom).innerHTML="<img src=\"../.../../asserts/img/loading-mini.gif\">";
 		}
 		var getdata = "nb=1&mid=00010000000000000000000000000000&cid="+cid;	
 		//var getdata = "mid=00010000000000000000000000000000&cid="+cid;
@@ -104,10 +104,10 @@ function mycheckbox(){
 
 
  function clients_list_load(){
-	   post_draw("./cpanel.php","clients_list","act=clients_list");
+	   post_draw("cpanel","clients_list","act=clients_list");
    }     
    function group_list_load(){
-	   post_draw("./cpanel.php","group_list","act=group_list");
+	   post_draw("cpanel","group_list","act=group_list");
    }   
    function show_panel(cid){
 	   destroy_mod_panel(null);
@@ -147,7 +147,7 @@ function mycheckbox(){
 	    }else{
 			var div = document.getElementById("MOD_"+uniqu);
 			if (div){
-				div.parentNode.removeChild(div);   //É¾³ý
+				div.parentNode.removeChild(div);   //É¾ï¿½ï¿½
 			}
 		}		
    }
